@@ -18,4 +18,4 @@ jobs:
         SOURCE: "./"
         REMOTE_HOST: "ubuntu@44.205.156.52"
         REMOTE_USER: "ec2-linux-intechcrm"
-        TARGET: "/home/ec2-user"
+        TARGET: "/home/ec2-linux-intechcrm"
