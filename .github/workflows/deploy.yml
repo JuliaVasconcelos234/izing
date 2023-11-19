@@ -14,8 +14,8 @@ jobs:
     - name: Copy files with SSH
       uses: easingthemes/ssh-deploy@main
       env:
-        SSH_PRIVATE_KEY: ec2-keypair-linux-intechcrm
+        SSH_PRIVATE_KEY:  ${{secrets.EC2_SSH_KEY}}
         SOURCE: "./"
-        REMOTE_HOST: "ip-10-10-1-160.ec2.internal"
+        REMOTE_HOST: "ubuntu@44.205.156.52"
         REMOTE_USER: "ec2-linux-intechcrm"
         TARGET: "/user/ec2-linux-intechcrm"
