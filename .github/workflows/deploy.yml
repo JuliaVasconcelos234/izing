@@ -14,7 +14,15 @@ jobs:
     - name: Copy files with SSH
       uses: easingthemes/ssh-deploy@main
       env:
-        SSH_PRIVATE_KEY:  ${{secrets.EC2_SSH_KEY}}
+        SSH_PRIVATE_KEY: ---- BEGIN SSH2 PUBLIC KEY ----
+Comment: "rsa-key-20231118"
+AAAAB3NzaC1yc2EAAAADAQABAAABAQCyzhQRNfag5M1FtnsX5Ugwl5ij3G0gtmJ+
+wagNEeX7vFDGXf4F3sP6cLx3VVp7w33Anc5VISB0GroqBM4XR1n6aTyETajWW0VN
+nvvlviTqSG6nqeiULqVmEmyLHtLNZcE+4ZPBY3G24lWDLZXqtToJbNsod+dG35SG
+XHSbYC0kbTd8wwWP7D+Nz8xq85r2IDb4pGrUSfI+tdV2H2zJLhI4ocmbhEat/gNs
+dKR2N1dTvBW57sfeDvcTUKTJres++2OT8PYRzAdUn1vpEdVaUPR2qfHJE1+n7mCT
+CBihro7V7GfQJPq7Ln4WoW7At9Pot/dBe1X+wlhwUsedibeAqmUf
+---- END SSH2 PUBLIC KEY ----
         SOURCE: "./"
         REMOTE_HOST: "ubuntu@44.205.156.52"
         REMOTE_USER: "ec2-linux-intechcrm"
