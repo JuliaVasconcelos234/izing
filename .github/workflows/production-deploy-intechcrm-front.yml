@@ -19,6 +19,9 @@ jobs:
           node-version: "16.14.2"
           cache: yarn
 
+        - shell: bash
+        run: mv ./.env.staging.local ./.env.production.local
+
       - name: YARN Build
         env:
           ENV: production
